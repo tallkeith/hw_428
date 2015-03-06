@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  favorite_team: MyString
+  favorite_player: MyString
+  why: MyText
+
+two:
+  favorite_team: MyString
+  favorite_player: MyString
+  why: MyText

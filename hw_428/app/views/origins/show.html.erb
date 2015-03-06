@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date of birth:</strong>
+  <%= @origin.date_of_birth %>
+</p>
+
+<p>
+  <strong>Home town:</strong>
+  <%= @origin.home_town %>
+</p>
+
+<p>
+  <strong>Hospital of birth:</strong>
+  <%= @origin.hospital_of_birth %>
+</p>
+
+<%= link_to 'Edit', edit_origin_path(@origin) %> |
+<%= link_to 'Back', origins_path %>

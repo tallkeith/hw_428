@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_of_birth: 1
+  home_town: MyString
+  hospital_of_birth: MyText
+
+two:
+  date_of_birth: 1
+  home_town: MyString
+  hospital_of_birth: MyText

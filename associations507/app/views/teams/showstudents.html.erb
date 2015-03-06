@@ -1,0 +1,11 @@
+<h1> <%=@team.name%> </h1>
+
+This team has <%=@students.count%> students.
+<br>
+<br>
+Here are the students in <%=@team.name%> <br>
+
+	<% @students.each do |student| %>
+		<%=student.first_name%>
+		<%=student.last_name%><br>
+	<%end%>

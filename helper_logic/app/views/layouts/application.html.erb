@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HelperLogic</title>
+ 
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <%= csrf_meta_tags %>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+</head>
+<body>
+	<header>
+		
+		<nav class="mylinks">
+			<img src="/assets/KEITH-Shoes-logo2-300x164.jpg" onClick="goToHomepage();">
+				
+			<%= link_to "Groups", groups_path%> |
+			<%= link_to "Members", members_path%> |
+			<%= link_to "Fire the Missiles", members_fire_the_missiles_path%>
+		</nav>
+	</header>
+
+<%= yield %>
+<footer>
+	<div class="mylinks">
+<%=link_to 'Groups', groups_path %> |
+<%=link_to 'Members', members_path %> |
+<%=link_to 'Mass Update', groups_mass_update_member_count_path%> |
+<%=link_to 'Fire Zee Missiles!!!', members_fire_the_missiles_path%>
+</div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<h1>Listing sports</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Favorite team</th>
+      <th>Favorite player</th>
+      <th>Why</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sports.each do |sport| %>
+      <tr>
+        <td><%= sport.favorite_team %></td>
+        <td><%= sport.favorite_player %></td>
+        <td><%= sport.why %></td>
+        <td><%= link_to 'Show', sport %></td>
+        <td><%= link_to 'Edit', edit_sport_path(sport) %></td>
+        <td><%= link_to 'Destroy', sport, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sport', new_sport_path %>

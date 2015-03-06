@@ -1,0 +1,29 @@
+<%= form_for(@origin) do |f| %>
+  <% if @origin.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@origin.errors.count, "error") %> prohibited this origin from being saved:</h2>
+
+      <ul>
+      <% @origin.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date_of_birth %><br>
+    <%= f.number_field :date_of_birth %>
+  </div>
+  <div class="field">
+    <%= f.label :home_town %><br>
+    <%= f.text_field :home_town %>
+  </div>
+  <div class="field">
+    <%= f.label :hospital_of_birth %><br>
+    <%= f.text_area :hospital_of_birth %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

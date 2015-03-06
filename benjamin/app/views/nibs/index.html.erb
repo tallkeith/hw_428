@@ -1,0 +1,31 @@
+<h1>Listing nibs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th>Notes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @nibs.each do |nib| %>
+      <tr>
+        <td><%= nib.name %></td>
+        <td><%= nib.phone %></td>
+        <td><%= nib.email %></td>
+        <td><%= nib.notes %></td>
+        <td><%= link_to 'Show', nib %></td>
+        <td><%= link_to 'Edit', edit_nib_path(nib) %></td>
+        <td><%= link_to 'Destroy', nib, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Nib', new_nib_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  number_attending: 1
+  gift: MyText
+
+two:
+  name: MyString
+  number_attending: 1
+  gift: MyText

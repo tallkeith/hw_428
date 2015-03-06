@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @nib.name %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @nib.phone %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @nib.email %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @nib.notes %>
+</p>
+
+<%= link_to 'Edit', edit_nib_path(@nib) %> |
+<%= link_to 'Back', nibs_path %>

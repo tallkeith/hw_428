@@ -1,0 +1,13 @@
+<%= form_tag("/students/set_color", method: "post") do %>
+<% @color_array.each do |item| %>
+  <%= radio_button_tag :color, item %> <%= item %><br />
+  <% end %>
+
+
+  <%= submit_tag("Colorize!!") %>
+
+
+
+
+
+<% end %>

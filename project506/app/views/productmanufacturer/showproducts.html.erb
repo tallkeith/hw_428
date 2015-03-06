@@ -1,0 +1,15 @@
+<h1>Showing all products</h1>
+
+
+there are <%=@products.count%> products in the system.
+<br><br>
+
+<%
+@products.each do |product|
+%>
+<b>
+<%=product.name%>
+</b>
+<br>
+
+<%end%>

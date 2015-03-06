@@ -1,0 +1,28 @@
+<h1>Listing thank_yous</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attended</th>
+      <th>Gift value</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @thank_yous.each do |thank_you| %>
+      <tr>
+        <td><%= thank_you.guest_name %></td>
+        <td><%= thank_you.attended %></td>
+        <td><%= thank_you.gift_value %></td>
+        <td><%= link_to 'Show', thank_you %></td>
+        <td><%= link_to 'Edit', edit_thank_you_path(thank_you) %></td>
+        <td><%= link_to 'Destroy', thank_you, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Thank you', new_thank_you_path %>

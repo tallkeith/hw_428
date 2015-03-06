@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Guest Name:</strong>
+  <%= @thank_you.attended %>
+</p>
+
+<p>
+  <strong>Attended:</strong>
+  <%= @thank_you.attended %>
+</p>
+
+<p>
+  <strong>Gift value:</strong>
+  <%= @thank_you.gift_value %>
+</p>
+
+<%= link_to 'Edit', edit_thank_you_path(@thank_you) %> |
+<%= link_to 'Back', thank_yous_path %>

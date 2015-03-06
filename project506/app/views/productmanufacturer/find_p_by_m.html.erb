@@ -1,0 +1,19 @@
+<h1>Find Product by Manufacturer</h1>
+
+How many results? <%=@products.count%>
+
+<br>
+<br>
+
+Name: 
+<br>
+<br>
+
+<%@products.each do |product|
+%>
+<b>
+<%=product.name%>
+</b>
+<br>
+
+<%end%>

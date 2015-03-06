@@ -1,0 +1,8 @@
+<%= form_tag("/teams/createteams", method: "post") do %>
+  <%= label_tag(:num_teams, "Num Teams") %>
+  <%= text_field_tag(:num_teams) %>
+  <%= submit_tag("Go!") %>
+
+
+
+<% end %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Favorite team:</strong>
+  <%= @sport.favorite_team %>
+</p>
+
+<p>
+  <strong>Favorite player:</strong>
+  <%= @sport.favorite_player %>
+</p>
+
+<p>
+  <strong>Why:</strong>
+  <%= @sport.why %>
+</p>
+
+<%= link_to 'Edit', edit_sport_path(@sport) %> |
+<%= link_to 'Back', sports_path %>
